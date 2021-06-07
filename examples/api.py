@@ -15,3 +15,4 @@ nlp = pipeline("sentiment-analysis",
                tokenizer="distilbert-base-uncased-finetuned-sst-2-english")
 
 
+def generate(data):
