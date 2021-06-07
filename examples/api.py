@@ -21,3 +21,12 @@ def generate(data):
 
 @app.get('/')
 def get_root():
+
+
+def sentiment_analysis(data: str):
+    """
+    :param data:
+    :return: sentiment
+    sentiment = generate(data)
+
+    return sentiment[0]
