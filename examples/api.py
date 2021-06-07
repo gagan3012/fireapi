@@ -21,6 +21,7 @@ def generate(data):
 
 @app.get('/')
 def get_root():
+    return {'message': 'Welcome to the sentiment analysis API'}
 
 
 def sentiment_analysis(data: str):
