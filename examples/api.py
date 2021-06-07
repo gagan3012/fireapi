@@ -16,3 +16,4 @@ nlp = pipeline("sentiment-analysis",
 
 
 def generate(data):
+    return nlp(data)
