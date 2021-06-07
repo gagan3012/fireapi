@@ -13,3 +13,4 @@ class Sentiment(BaseModel):
 nlp = pipeline("sentiment-analysis",
                model="distilbert-base-uncased-finetuned-sst-2-english",
                tokenizer="distilbert-base-uncased-finetuned-sst-2-english")
+
