@@ -20,3 +20,4 @@ def generate(data):
 
 
 @app.get('/')
+def get_root():
