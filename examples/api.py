@@ -9,3 +9,4 @@ class Sentiment(BaseModel):
     sentiment: str
     sentiment_probability: float
 
+
