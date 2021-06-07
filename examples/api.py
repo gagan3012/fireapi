@@ -27,6 +27,7 @@ def get_root():
 @app.get('/api/v1/st')
 def sentiment_analysis(data: str):
     """
+    Sentiment Analysis API
     :param data:
     :return: sentiment
     sentiment = generate(data)
