@@ -36,4 +36,5 @@ def sentiment_analysis(data: str):
 
     return sentiment[0]
 
+
     uvicorn.run(app, host='127.0.0.1', port=8000)
