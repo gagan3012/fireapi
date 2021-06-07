@@ -19,3 +19,4 @@ def generate(data):
     return nlp(data)
 
 
+@app.get('/')
