@@ -6,3 +6,4 @@ app = FastAPI()
 
 
 class Sentiment(BaseModel):
+    sentiment: str
