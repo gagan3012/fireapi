@@ -10,3 +10,4 @@ class Sentiment(BaseModel):
     sentiment_probability: float
 
 
+nlp = pipeline("sentiment-analysis",
