@@ -1,4 +1,3 @@
-
 COPY ./requirements.txt .
 
 COPY ./model /model/
