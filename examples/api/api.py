@@ -1,4 +1,3 @@
-from transformers import pipeline
 from pydantic import BaseModel
 
 app = FastAPI()
