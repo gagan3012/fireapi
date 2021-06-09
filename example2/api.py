@@ -18,8 +18,6 @@ oov_tok = "<OOV>"
 model = tf.keras.models.load_model('model.h5')
 
 tokenizer = Tokenizer(num_words=vocab_size, oov_token=oov_tok)
-
-
 def input_to_model(sentence: list):
     sequences = tokenizer.texts_to_sequences(sentence)
     padded = pad_sequences(sequences, maxlen=max_length, padding=padding_type, truncating=trunc_type)
@@ -32,11 +30,6 @@ def input_to_model(sentence: list):
 @app.get('/')
 def get_root():
     return {'message': 'Welcome to the ML API'}
-
-
-@app.post('/api/v1/st')
-def classifcation(data: List[str]):
-    """
     Sentiment Analysis API
     :param data:
     :return:
@@ -44,9 +37,5 @@ def classifcation(data: List[str]):
     result = input_to_model(data)
 
     return result
-
-
-if __name__ == '__main__':
-    uvicorn.run(app, host='127.0.0.1', port=8000)
 
 
