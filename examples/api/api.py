@@ -36,6 +36,17 @@ def sentiment_analysis(data: str):
 
     return sentiment[0]
 
+@app.post('/api/v2/st')
+def sentiment_analysis_post(data: str):
+    """
+    Sentiment Analysis API
+    :param data:
+    :return: sentiment
+    """
+    sentiment = generate(data)
+
+    return sentiment[0]
+
 
 if __name__ == '__main__':
     uvicorn.run(app, host='127.0.0.1', port=8000)
