@@ -1,9 +1,12 @@
+from typing import List
+
 import uvicorn
 from fastapi import FastAPI
-from pydantic import BaseModel
 import tensorflow as tf
 from tensorflow.keras.preprocessing.text import Tokenizer
 from tensorflow.keras.preprocessing.sequence import pad_sequences
+
+app = FastAPI()
 
 vocab_size = 10000
 embedding_dim = 16
@@ -24,3 +27,26 @@ def input_to_model(sentence: list):
     result = model.predict(padded)
 
     return {'data': result}
+
+
+@app.get('/')
+def get_root():
+    return {'message': 'Welcome to the ML API'}
+
+
+@app.post('/api/v1/st')
+def classifcation(data: List[str]):
+    """
+    Sentiment Analysis API
+    :param data:
+    :return:
+    """
+    result = input_to_model(data)
+
+    return result
+
+
+if __name__ == '__main__':
+    uvicorn.run(app, host='127.0.0.1', port=8000)
+
+
