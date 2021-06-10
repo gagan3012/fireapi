@@ -7,3 +7,4 @@ module = "mlapi"
 author = "Gagan Bhatia"
 author-email = "gbhatia880@gmail.com"
 home-page = "https://github.com/gagan3012/mlapi"
+classifiers = [ "License :: OSI Approved :: MIT License",]
