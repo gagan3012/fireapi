@@ -5,3 +5,4 @@ build-backend = "flit_core.buildapi"
 [tool.flit.metadata]
 module = "mlapi"
 author = "Gagan Bhatia"
+author-email = "gbhatia880@gmail.com"
