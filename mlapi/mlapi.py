@@ -27,3 +27,4 @@ async def verify(token: str = Depends(oauth2_scheme)):
             return token
         raise Exception
     except Exception as e:
+        raise HTTPException(
