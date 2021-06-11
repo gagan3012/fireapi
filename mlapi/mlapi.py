@@ -21,3 +21,4 @@ app.add_middleware(
 
 oauth2_scheme = OAuth2PasswordBearer(tokenUrl="token")
 
+async def verify(token: str = Depends(oauth2_scheme)):
