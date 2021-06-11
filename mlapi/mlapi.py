@@ -31,3 +31,4 @@ async def verify(token: str = Depends(oauth2_scheme)):
             status_code=HTTP_401_UNAUTHORIZED,
             detail="Invalid authentication credentials with error {}".format(
                 str(e)),
+            headers={"WWW-Authenticate": "Bearer"},
