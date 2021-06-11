@@ -25,3 +25,4 @@ async def verify(token: str = Depends(oauth2_scheme)):
     try:
         if token == os.getenv('BUDGET_TOKEN'):
             return token
+        raise Exception
