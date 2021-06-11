@@ -11,3 +11,4 @@ from starlette.status import HTTP_401_UNAUTHORIZED
 app = FastAPI()
 
 origins = ["*"]
+
