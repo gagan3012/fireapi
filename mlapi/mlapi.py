@@ -29,3 +29,4 @@ async def verify(token: str = Depends(oauth2_scheme)):
     except Exception as e:
         raise HTTPException(
             status_code=HTTP_401_UNAUTHORIZED,
+            detail="Invalid authentication credentials with error {}".format(
