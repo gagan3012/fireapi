@@ -33,4 +33,3 @@ async def verify(token: str = Depends(oauth2_scheme)):
             detail="Invalid authentication credentials with error {}".format(
                 str(e)),
             headers={"WWW-Authenticate": "Bearer"},
-        )        )
