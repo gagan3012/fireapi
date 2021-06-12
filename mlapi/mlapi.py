@@ -38,4 +38,4 @@ async def verify(token: str = Depends(oauth2_scheme)):
 
 @app.get("/")
 def health_check():
-    return {"I'm": "Alive!"}
+    return {"message": "Welcome to Fire ML Please visit docs to get started"}
