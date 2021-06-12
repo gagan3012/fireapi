@@ -34,3 +34,4 @@ async def verify(token: str = Depends(oauth2_scheme)):
                 str(e)),
             headers={"WWW-Authenticate": "Bearer"},
         )
+
