@@ -21,6 +21,7 @@ app.add_middleware(
 
 oauth2_scheme = OAuth2PasswordBearer(tokenUrl="token")
 
+
 async def verify(token: str = Depends(oauth2_scheme)):
     try:
         if token == os.getenv('TOKEN'):
@@ -32,4 +33,4 @@ async def verify(token: str = Depends(oauth2_scheme)):
             detail="Invalid authentication credentials with error {}".format(
                 str(e)),
             headers={"WWW-Authenticate": "Bearer"},
-        )
+        )        )
