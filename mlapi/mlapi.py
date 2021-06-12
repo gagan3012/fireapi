@@ -36,3 +36,4 @@ async def verify(token: str = Depends(oauth2_scheme)):
         )
 
 
+def health_check():
