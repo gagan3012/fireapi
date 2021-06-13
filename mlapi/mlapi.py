@@ -41,6 +41,7 @@ async def verify(token: str = Depends(oauth2_scheme)):
 
 PREDICTOR: Optional[Any] = None
 
+@app.on_event("startup")
 @app.get("/")
 def health_check():
     return {"message": "Welcome to Fire ML Please visit docs to get started"}
