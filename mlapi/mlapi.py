@@ -51,6 +51,7 @@ async def startup_event():
         'username': os.environ['BUDGET_USERNAME'],
         'password': os.environ['BUDGET_PWD'],
     }
+
 @app.get("/")
 def health_check():
     return {"message": "Welcome to Fire ML Please visit docs to get started"}
