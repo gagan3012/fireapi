@@ -57,6 +57,7 @@ async def startup_event():
         assert PREDICTOR_CLASS_PATH is not None
 
         ENV_PREDICTOR_ENTRYPOINT = os.getenv('BUDGET_PREDICTOR_ENTRYPOINT',
+                                             'Predictor')
         PREDICTOR.load()
 @app.get("/")
 def health_check():
