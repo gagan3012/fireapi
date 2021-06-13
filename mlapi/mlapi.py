@@ -58,6 +58,7 @@ async def startup_event():
 
         ENV_PREDICTOR_ENTRYPOINT = os.getenv('BUDGET_PREDICTOR_ENTRYPOINT',
                                              'Predictor')
+        # Load predictor
         PREDICTOR.load()
 @app.get("/")
 def health_check():
