@@ -52,6 +52,7 @@ async def startup_event():
         'password': os.environ['BUDGET_PWD'],
     }
 
+        PREDICTOR_CLASS_PATH = os.getenv('BUDGET_PREDICTOR_PATH')
 @app.get("/")
 def health_check():
     return {"message": "Welcome to Fire ML Please visit docs to get started"}
