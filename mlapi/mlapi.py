@@ -44,6 +44,7 @@ PREDICTOR: Optional[Any] = None
 @app.on_event("startup")
 async def startup_event():
     global PREDICTOR
+    global USERS_DB
 
 @app.get("/")
 def health_check():
