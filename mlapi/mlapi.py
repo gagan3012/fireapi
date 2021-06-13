@@ -39,6 +39,7 @@ async def verify(token: str = Depends(oauth2_scheme)):
             headers={"WWW-Authenticate": "Bearer"},
         )
 
+PREDICTOR: Optional[Any] = None
 
 @app.get("/")
 def health_check():
