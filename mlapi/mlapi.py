@@ -60,6 +60,7 @@ async def startup_event():
                                              'Predictor')
         # Load predictor
         PREDICTOR.load()
+    except Exception as e:
 @app.get("/")
 def health_check():
     return {"message": "Welcome to Fire ML Please visit docs to get started"}
