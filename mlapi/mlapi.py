@@ -47,6 +47,7 @@ async def startup_event():
     global USERS_DB
 
     # Setting auth creds
+    USERS_DB = {
         'username': os.environ['BUDGET_USERNAME'],
 @app.get("/")
 def health_check():
