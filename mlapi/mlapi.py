@@ -44,6 +44,7 @@ PREDICTOR: Optional[Any] = None
 @app.on_event("startup")
 async def startup_event():
     global PREDICTOR
+
 @app.get("/")
 def health_check():
     return {"message": "Welcome to Fire ML Please visit docs to get started"}
