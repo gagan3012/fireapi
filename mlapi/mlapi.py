@@ -55,6 +55,7 @@ async def startup_event():
     try:
         PREDICTOR_CLASS_PATH = os.getenv('BUDGET_PREDICTOR_PATH')
         assert PREDICTOR_CLASS_PATH is not None
+
 @app.get("/")
 def health_check():
     return {"message": "Welcome to Fire ML Please visit docs to get started"}
