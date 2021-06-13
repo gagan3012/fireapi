@@ -52,6 +52,7 @@ async def startup_event():
         'password': os.environ['BUDGET_PWD'],
     }
 
+    try:
         PREDICTOR_CLASS_PATH = os.getenv('BUDGET_PREDICTOR_PATH')
         assert PREDICTOR_CLASS_PATH is not None
 @app.get("/")
