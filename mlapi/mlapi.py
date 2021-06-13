@@ -61,6 +61,7 @@ async def startup_event():
         # Load predictor
         PREDICTOR.load()
     except Exception as e:
+        logging.debug(f"Predictor class could not be loaded with: {str(e)}")
 @app.get("/")
 def health_check():
     return {"message": "Welcome to Fire ML Please visit docs to get started"}
