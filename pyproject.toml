@@ -3,6 +3,7 @@ requires = ["flit_core >=2,<4"]
 build-backend = "flit_core.buildapi"
 
 [tool.flit.metadata]
+module = "fireapi"
 author = "Gagan Bhatia"
 author-email = "gbhatia880@gmail.com"
 home-page = "https://github.com/gagan3012/mlapi"
