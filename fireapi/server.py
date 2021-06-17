@@ -93,3 +93,4 @@ async def predict(request: Request,
                    "for more detail.",
         )
     return await PREDICTOR.predict(request)
+
