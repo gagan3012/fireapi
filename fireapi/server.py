@@ -99,3 +99,4 @@ async def predict(request: Request,
 async def predict_image(request: UploadFile = File(...),
                         _: str = Depends(verify)) -> Response:
     """
+    https://fastapi.tiangolo.com/tutorial/request-files/
