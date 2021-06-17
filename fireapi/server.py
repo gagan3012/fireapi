@@ -92,3 +92,4 @@ async def predict(request: Request,
             detail="The predictor could not be loaded. Please check the logs "
                    "for more detail.",
         )
+    return await PREDICTOR.predict(request)
