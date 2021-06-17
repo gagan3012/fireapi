@@ -117,3 +117,4 @@ async def predict_image(request: UploadFile = File(...),
 async def predict_dict(request: Payload,
                        _: str = Depends(verify)) -> Response:
     """
+    Request is Payload type which has a dict.
