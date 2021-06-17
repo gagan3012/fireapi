@@ -87,3 +87,4 @@ async def predict(request: Request,
                   _: str = Depends(verify)) -> Response:
     global PREDICTOR
     if PREDICTOR is None:
+        raise HTTPException(
