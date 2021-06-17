@@ -74,3 +74,4 @@ async def login(form_data: OAuth2PasswordRequestForm = Depends()):
     global USERS_DB
     if form_data.username == USERS_DB['username'] \
             and form_data.password == USERS_DB['password']:
+        return {
