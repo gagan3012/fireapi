@@ -71,3 +71,4 @@ def health_check():
 
 @app.post("/token")
 async def login(form_data: OAuth2PasswordRequestForm = Depends()):
+    global USERS_DB
