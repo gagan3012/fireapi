@@ -102,3 +102,4 @@ async def predict_image(request: UploadFile = File(...),
     https://fastapi.tiangolo.com/tutorial/request-files/
     :param request:
     :return:
+    """
