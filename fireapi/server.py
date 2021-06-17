@@ -111,3 +111,4 @@ async def predict_image(request: UploadFile = File(...),
                    "for more detail.",
         )
     return await PREDICTOR.predict(request)
+
