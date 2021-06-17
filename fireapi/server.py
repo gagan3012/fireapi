@@ -76,3 +76,4 @@ async def login(form_data: OAuth2PasswordRequestForm = Depends()):
             and form_data.password == USERS_DB['password']:
         return {
             "access_token": os.getenv('BUDGET_TOKEN'),
+            "token_type": "bearer"
