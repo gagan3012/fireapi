@@ -123,3 +123,4 @@ async def predict_dict(request: Payload,
     """
     global PREDICTOR
     if PREDICTOR is None:
+        raise HTTPException(
