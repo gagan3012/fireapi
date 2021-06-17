@@ -88,3 +88,4 @@ async def predict(request: Request,
     global PREDICTOR
     if PREDICTOR is None:
         raise HTTPException(
+            status_code=500,
