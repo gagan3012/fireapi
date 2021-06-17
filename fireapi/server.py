@@ -127,3 +127,4 @@ async def predict_dict(request: Payload,
             status_code=500,
             detail="The predictor could not be loaded. Please check the logs "
                    "for more detail.",
+    return await PREDICTOR.predict(request)
