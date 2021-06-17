@@ -89,3 +89,4 @@ async def predict(request: Request,
     if PREDICTOR is None:
         raise HTTPException(
             status_code=500,
+            detail="The predictor could not be loaded. Please check the logs "
