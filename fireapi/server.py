@@ -121,3 +121,4 @@ async def predict_dict(request: Payload,
     :param request:
     :return:
     """
+    if PREDICTOR is None:
