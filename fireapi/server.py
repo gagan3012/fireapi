@@ -69,3 +69,4 @@ def health_check():
     return {"message": "Welcome to Fire ML Please visit docs to get started"}
 
 
+@app.post("/token")
