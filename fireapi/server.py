@@ -86,3 +86,4 @@ async def login(form_data: OAuth2PasswordRequestForm = Depends()):
 async def predict(request: Request,
                   _: str = Depends(verify)) -> Response:
     global PREDICTOR
+    if PREDICTOR is None:
