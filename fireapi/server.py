@@ -114,3 +114,4 @@ async def predict_image(request: UploadFile = File(...),
 
 
 @app.post("/predict_dict/")
+async def predict_dict(request: Payload,
