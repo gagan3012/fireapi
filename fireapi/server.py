@@ -83,4 +83,5 @@ async def login(form_data: OAuth2PasswordRequestForm = Depends()):
 
 
 @app.post("/predict/")
+async def predict(request: Request,
                   _: str = Depends(verify)) -> Response:
