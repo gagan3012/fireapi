@@ -118,3 +118,4 @@ async def predict_dict(request: Payload,
                        _: str = Depends(verify)) -> Response:
     """
     Request is Payload type which has a dict.
+    :param request:
