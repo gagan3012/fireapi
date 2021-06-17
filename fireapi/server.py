@@ -104,3 +104,4 @@ async def predict_image(request: UploadFile = File(...),
     :return:
     """
     global PREDICTOR
+    if PREDICTOR is None:
