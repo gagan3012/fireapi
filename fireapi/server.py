@@ -120,3 +120,4 @@ async def predict_dict(request: Payload,
     Request is Payload type which has a dict.
     :param request:
     :return:
+    """
