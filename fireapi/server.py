@@ -82,3 +82,4 @@ async def login(form_data: OAuth2PasswordRequestForm = Depends()):
         status_code=401, detail="Incorrect username or password")
 
 
+@app.post("/predict/")
