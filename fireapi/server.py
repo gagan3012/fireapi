@@ -79,3 +79,4 @@ async def login(form_data: OAuth2PasswordRequestForm = Depends()):
             "token_type": "bearer"
         }
     raise HTTPException(
+        status_code=401, detail="Incorrect username or password")
