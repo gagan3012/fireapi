@@ -78,3 +78,4 @@ async def login(form_data: OAuth2PasswordRequestForm = Depends()):
             "access_token": os.getenv('BUDGET_TOKEN'),
             "token_type": "bearer"
         }
+    raise HTTPException(
