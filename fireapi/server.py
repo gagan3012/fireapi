@@ -95,3 +95,4 @@ async def predict(request: Request,
     return await PREDICTOR.predict(request)
 
 
+@app.post("/predict_image/")
