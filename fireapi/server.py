@@ -105,3 +105,4 @@ async def predict_image(request: UploadFile = File(...),
     """
     global PREDICTOR
     if PREDICTOR is None:
+        raise HTTPException(
