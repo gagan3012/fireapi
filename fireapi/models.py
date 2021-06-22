@@ -10,3 +10,4 @@ class User(BaseModel):
     disabled: Optional[bool] = None
 
 
+class Payload(BaseModel):
