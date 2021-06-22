@@ -11,3 +11,4 @@ class User(BaseModel):
 
 
 class Payload(BaseModel):
+    payload: Dict = {}
