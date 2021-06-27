@@ -30,6 +30,7 @@ def get_docker_compose_contents(self, docker_compose_path: Text = None):
         docker_compose_path = os.path.join(
             base_path, 'template-compose.yaml')
 
+    with open(docker_compose_path, 'r') as f:
 def launch_local(self,
                  predictor_class,
                  requirements: Union[Text, List] = None,
