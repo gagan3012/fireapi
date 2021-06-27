@@ -21,4 +21,5 @@ def launch_local(self,
     :param bucket_name: name of bucket to store predictor class.
     :return:
     """
+        bucket_name = f'budget_bucket_{self.unique_id}'
     create_bucket_if_not_exists(bucket_name)
