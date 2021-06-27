@@ -37,6 +37,7 @@ def get_docker_compose_contents(self, docker_compose_path: Text = None):
 
 def get_nginx_conf_contents(self,
                             domain: Text,
+                            subdomain: Text,
 def launch_local(self,
                  predictor_class,
                  requirements: Union[Text, List] = None,
