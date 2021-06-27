@@ -13,3 +13,4 @@ def launch_local(self,
     Launch API locally at 0.0.0.0:8000 via docker to simulate endpoint
     before a proper launch.
     :param predictor_class: class of type budgetml.BasePredictor
+    :param username: username for FastAPI endpoints
