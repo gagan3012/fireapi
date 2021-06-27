@@ -23,6 +23,7 @@ def get_requirements_file_contents(self, requirements_path: Text):
             requirements_content = f.read()
     return requirements_content
 
+
 def launch_local(self,
                  predictor_class,
                  requirements: Union[Text, List] = None,
