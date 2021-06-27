@@ -17,3 +17,4 @@ def launch_local(self,
     :param password: password for FastAPI endpoints
     :param dockerfile_path: path to dockerfile
     :param requirements: Path to requirements or a list of python
+    requirements. Use one of `dockerfile_path` or `requirements`
