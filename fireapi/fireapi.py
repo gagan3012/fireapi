@@ -14,6 +14,7 @@ def get_docker_file_contents(self, dockerfile_path: Text):
             "$BASE_IMAGE", BUDGETML_BASE_IMAGE_NAME)
     return docker_template_content
 
+
 def launch_local(self,
                  predictor_class,
                  requirements: Union[Text, List] = None,
