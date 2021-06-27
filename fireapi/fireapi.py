@@ -14,3 +14,4 @@ def launch_local(self,
     before a proper launch.
     :param predictor_class: class of type budgetml.BasePredictor
     :param username: username for FastAPI endpoints
+    :param password: password for FastAPI endpoints
