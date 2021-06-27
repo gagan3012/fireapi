@@ -11,3 +11,4 @@ def launch_local(self,
                  password: Text = str(uuid4())):
     """
     Launch API locally at 0.0.0.0:8000 via docker to simulate endpoint
+    before a proper launch.
