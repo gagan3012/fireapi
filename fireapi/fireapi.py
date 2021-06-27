@@ -10,6 +10,7 @@ def get_docker_file_contents(self, dockerfile_path: Text):
     with open(dockerfile_path, 'r') as f:
         docker_template_content = f.read()
         # TODO: Maybe use env variables for this
+        docker_template_content = docker_template_content.replace(
 def launch_local(self,
                  predictor_class,
                  requirements: Union[Text, List] = None,
