@@ -48,6 +48,7 @@ def get_nginx_conf_contents(self,
         nginx_config_content = f.read()
         nginx_config_content = nginx_config_content.replace(
             "$BUDGET_DOMAIN", f'{subdomain}.{domain}')
+        return nginx_config_content
 def launch_local(self,
                  predictor_class,
                  requirements: Union[Text, List] = None,
