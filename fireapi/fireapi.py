@@ -18,3 +18,4 @@ def launch_local(self,
     :param dockerfile_path: path to dockerfile
     :param requirements: Path to requirements or a list of python
     requirements. Use one of `dockerfile_path` or `requirements`
+    :param bucket_name: name of bucket to store predictor class.
