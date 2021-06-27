@@ -8,3 +8,4 @@ def launch_local(self,
                  dockerfile_path: Text = None,
                  bucket_name: Text = None,
                  username: Text = 'budget',
+                 password: Text = str(uuid4())):
