@@ -11,6 +11,7 @@ def get_docker_file_contents(self, dockerfile_path: Text):
         docker_template_content = f.read()
         # TODO: Maybe use env variables for this
         docker_template_content = docker_template_content.replace(
+            "$BASE_IMAGE", BUDGETML_BASE_IMAGE_NAME)
 def launch_local(self,
                  predictor_class,
                  requirements: Union[Text, List] = None,
