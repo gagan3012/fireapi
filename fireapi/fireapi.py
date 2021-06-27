@@ -40,6 +40,7 @@ def get_nginx_conf_contents(self,
                             subdomain: Text,
                             nginx_config_path: Text = None):
     if nginx_config_path is None:
+        base_path = os.path.dirname(os.path.abspath(__file__))
 def launch_local(self,
                  predictor_class,
                  requirements: Union[Text, List] = None,
