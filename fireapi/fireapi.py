@@ -3,6 +3,7 @@ from uuid import uuid4
 
 
 def get_docker_file_contents(self, dockerfile_path: Text):
+    if dockerfile_path is None:
 def launch_local(self,
                  predictor_class,
                  requirements: Union[Text, List] = None,
