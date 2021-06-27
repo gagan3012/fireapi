@@ -15,6 +15,7 @@ def get_docker_file_contents(self, dockerfile_path: Text):
     return docker_template_content
 
 
+def get_requirements_file_contents(self, requirements_path: Text):
 def launch_local(self,
                  predictor_class,
                  requirements: Union[Text, List] = None,
