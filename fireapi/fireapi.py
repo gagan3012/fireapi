@@ -19,6 +19,7 @@ def get_requirements_file_contents(self, requirements_path: Text):
     if requirements_path is None:
         requirements_content = ''
     else:
+        with open(requirements_path, 'r') as f:
 def launch_local(self,
                  predictor_class,
                  requirements: Union[Text, List] = None,
