@@ -43,6 +43,7 @@ def get_nginx_conf_contents(self,
         base_path = os.path.dirname(os.path.abspath(__file__))
         nginx_config_path = os.path.join(
             base_path, 'template-nginx.conf')
+
 def launch_local(self,
                  predictor_class,
                  requirements: Union[Text, List] = None,
