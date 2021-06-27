@@ -6,6 +6,7 @@ def get_docker_file_contents(self, dockerfile_path: Text):
     if dockerfile_path is None:
         base_path = os.path.dirname(os.path.abspath(__file__))
         dockerfile_path = os.path.join(base_path, 'template.Dockerfile')
+
 def launch_local(self,
                  predictor_class,
                  requirements: Union[Text, List] = None,
