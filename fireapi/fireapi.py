@@ -45,6 +45,7 @@ def get_nginx_conf_contents(self,
             base_path, 'template-nginx.conf')
 
     with open(nginx_config_path, 'r') as f:
+        nginx_config_content = f.read()
 def launch_local(self,
                  predictor_class,
                  requirements: Union[Text, List] = None,
