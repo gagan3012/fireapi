@@ -39,6 +39,7 @@ def get_nginx_conf_contents(self,
                             domain: Text,
                             subdomain: Text,
                             nginx_config_path: Text = None):
+    if nginx_config_path is None:
 def launch_local(self,
                  predictor_class,
                  requirements: Union[Text, List] = None,
