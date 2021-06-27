@@ -15,3 +15,4 @@ def launch_local(self,
     :param predictor_class: class of type budgetml.BasePredictor
     :param username: username for FastAPI endpoints
     :param password: password for FastAPI endpoints
+    :param requirements: Path to requirements or a list of python
