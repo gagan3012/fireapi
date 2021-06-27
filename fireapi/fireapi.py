@@ -25,6 +25,7 @@ def get_requirements_file_contents(self, requirements_path: Text):
 
 
 def get_docker_compose_contents(self, docker_compose_path: Text = None):
+    if docker_compose_path is None:
 def launch_local(self,
                  predictor_class,
                  requirements: Union[Text, List] = None,
