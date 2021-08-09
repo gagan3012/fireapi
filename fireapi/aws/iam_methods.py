@@ -32,3 +32,5 @@ def retrieve_security_group(spotid, client=None, region=None):
 
 def get_security_group(client, spotid: str, enable_nfs: bool = False, enable_ds: bool = False,
                        firewall_ingress_settings=None):
+
+    if firewall_ingress_settings is not None:
