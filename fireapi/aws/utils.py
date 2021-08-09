@@ -72,3 +72,7 @@ def save_profiles(profiles):
     with open(profile_file, 'w') as f:
         f.write(pprint.pformat(profiles))
         f.close()
+
+
+def default_region():
+    profiles = load_profiles()
