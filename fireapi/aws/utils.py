@@ -131,3 +131,6 @@ def get_package_kp_dir():
     with open(kpfile, 'r') as f:
         default_path = f.read()
         f.close()
+    return default_path
+
+
