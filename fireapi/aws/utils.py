@@ -149,3 +149,7 @@ def set_default_kp_dir(directory: str):
         f.close()
     print('Default path has been set to ' + kpfile)
 
+
+def clear_key_pairs():
+    '''Erase all the key pairs in the kp_directory'''
+    answer = input(
