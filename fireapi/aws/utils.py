@@ -65,3 +65,6 @@ def save_profiles(profiles):
     '''Save the profile dict str in a .txt file'''
     profile_file = \
     [f for f in list(absoluteFilePaths(os.path.join(pull_root(), 'data'))) if os.path.split(f)[-1] == 'profiles.txt'][0]
+
+    # ptosave = ast.literal_eval(profile_str)
+    print(profile_file)
