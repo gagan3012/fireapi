@@ -3,3 +3,4 @@ from fireapi.aws import utils
 
 
 def create_key_pair(client, profile, kp_dir=None):
+    # Create a key pair on AWS
