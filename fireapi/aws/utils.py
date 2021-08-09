@@ -115,3 +115,6 @@ def show_instances():
 
 def list_instance_profiles():
     '''List all instance profile roles avaialable. Instance profiles assign roles to instances so they can access other AWS services like S3.'''
+    iam_client = boto3.client('iam')
+    return iam_client.list_instance_profiles()
+
