@@ -69,3 +69,7 @@ def get_security_group(client, spotid: str, enable_nfs: bool = False, enable_ds:
                                                          'ToPort': 443,
                                                          }
                                                     ])
+
+            # Add HTTPS egress rules (port 443) in order to connect datasync agent instance to AWS
+            client.authorize_security_group_egress(GroupId=sg['GroupId'],
+                                                   IpPermissions=[
