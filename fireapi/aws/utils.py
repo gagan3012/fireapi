@@ -127,3 +127,7 @@ def printTotals(transferred, toBeTransferred):
 def get_package_kp_dir():
     '''Get the key-pair directory'''
     kpfile = [f for f in list(absoluteFilePaths(os.path.join(pull_root(), 'data'))) if
+              os.path.split(f)[-1] == 'key_pair_default_dir.txt'][0]
+    with open(kpfile, 'r') as f:
+        default_path = f.read()
+        f.close()
