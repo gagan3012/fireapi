@@ -157,3 +157,7 @@ def clear_key_pairs():
 
     if answer == 'Y':
         for f in glob.glob(get_default_kp_dir() + '/*'):
+    else:
+        raise Exception('User exit')
+
+
