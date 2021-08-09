@@ -45,3 +45,5 @@ def get_security_group(client, spotid: str, enable_nfs: bool = False, enable_ds:
         if enable_nfs:
             # Add NFS rules (port 2049) in order to connect an EFS instance
             client.authorize_security_group_ingress(GroupName=spotid,
+                                                    IpPermissions=[
+                                                        {'FromPort': 2049,
