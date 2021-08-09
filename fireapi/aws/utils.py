@@ -112,3 +112,6 @@ def show_instances():
         print('     - "' + i['KeyName'].split('-')[1] + '" Type: ' + i['InstanceType'] + ', ID: ' + i['InstanceId'],
               flush=True)
 
+
+def list_instance_profiles():
+    '''List all instance profile roles avaialable. Instance profiles assign roles to instances so they can access other AWS services like S3.'''
