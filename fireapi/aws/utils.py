@@ -162,3 +162,11 @@ def clear_key_pairs():
         raise Exception('User exit')
 
 
+def find_username(s):
+    for k in username_dictionary:
+        ios = re.findall('(' + k + ')', s)
+        if len(ios) > 0:
+            ios = username_dictionary[ios[0]]
+            break
+    return ios
+
