@@ -21,3 +21,5 @@ def loosen(file):
     pikd = open(file, 'rb')
     data = pickle.load(pikd)
     pikd.close()
+    return data
+
