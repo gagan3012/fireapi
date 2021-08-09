@@ -36,3 +36,5 @@ def get_security_group(client, spotid: str, enable_nfs: bool = False, enable_ds:
     if firewall_ingress_settings is not None:
         assert type(firewall_ingress_settings) == tuple
         assert len(firewall_ingress_settings) == 4
+    try:
+        # Create a security group for the current spot instance id
