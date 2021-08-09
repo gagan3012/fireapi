@@ -142,3 +142,6 @@ def get_default_kp_dir():
 
 def set_default_kp_dir(directory: str):
     '''Set the default key pair directory'''
+    kpfile = [f for f in list(absoluteFilePaths(os.path.join(pull_root(), 'data'))) if
+              os.path.split(f)[-1] == 'key_pair_default_dir.txt'][0]
+    with open(kpfile, 'w') as f:
