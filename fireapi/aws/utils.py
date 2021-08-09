@@ -121,3 +121,6 @@ def list_instance_profiles():
 
 def printTotals(transferred, toBeTransferred):
     '''Print paramiko upload transfer'''
+    print("Transferred: %.3f" % float(float(transferred) / float(toBeTransferred)), end="\r", flush=True)
+
+
