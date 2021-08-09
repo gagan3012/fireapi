@@ -68,3 +68,7 @@ def save_profiles(profiles):
 
     # ptosave = ast.literal_eval(profile_str)
     print(profile_file)
+
+    with open(profile_file, 'w') as f:
+        f.write(pprint.pformat(profiles))
+        f.close()
