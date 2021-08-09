@@ -10,3 +10,6 @@ root = Path(os.path.dirname(os.path.abspath(__file__)))
 
 
 def full_pickle(title, data):
+    '''pickles the submited data and titles it'''
+    pikd = open(title + '.pickle', 'wb')
+    pickle.dump(data, pikd)
