@@ -30,3 +30,5 @@ def retrieve_security_group(spotid, client=None, region=None):
 
 # TODO : Split security group functions into create and retrieve
 
+def get_security_group(client, spotid: str, enable_nfs: bool = False, enable_ds: bool = False,
+                       firewall_ingress_settings=None):
