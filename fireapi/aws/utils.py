@@ -170,6 +170,7 @@ def find_username(s):
             break
     return ios
 
+
 def select_region():
     for i, r in enumerate(ami_data['region'].unique()): print(i, r)
     region_idx = int(input('Enter the number of the region you want to set the profiles to'))
