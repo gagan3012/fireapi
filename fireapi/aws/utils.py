@@ -177,3 +177,8 @@ def select_region():
     region = list(ami_data['region'].unique())[region_idx]
     clear_output()
     return region
+
+
+def select_image(region):
+    image_list = ami_data.loc[ami_data['region'] == region, 'image_name']
+    for i, r in enumerate(image_list): print(i, r)
