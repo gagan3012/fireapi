@@ -57,3 +57,7 @@ def load_profiles():
         profiles = ast.literal_eval(f.read())
 
     # print('Profiles loaded, you can edit profiles in '+str(profile))
+
+    return profiles
+
+
