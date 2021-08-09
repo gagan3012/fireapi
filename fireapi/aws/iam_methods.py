@@ -14,3 +14,6 @@ def create_key_pair(client, profile, kp_dir=None):
         file.write(keypair['KeyMaterial'])
         file.close()
     print('Key pair ' + profile['key_pair'][0] + ' created...')
+
+
+def retrieve_security_group(spotid, client=None, region=None):
