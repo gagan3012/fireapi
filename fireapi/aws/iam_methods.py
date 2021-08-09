@@ -54,3 +54,5 @@ def get_security_group(client, spotid: str, enable_nfs: bool = False, enable_ds:
                                                     ])
 
         if enable_ds:
+            # Add ingress & egress rules to enable datasync
+            # Add HTTP and HTTPS rules (port 80 & 443) in order to connect to datasync agent
