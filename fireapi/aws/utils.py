@@ -124,3 +124,6 @@ def printTotals(transferred, toBeTransferred):
     print("Transferred: %.3f" % float(float(transferred) / float(toBeTransferred)), end="\r", flush=True)
 
 
+def get_package_kp_dir():
+    '''Get the key-pair directory'''
+    kpfile = [f for f in list(absoluteFilePaths(os.path.join(pull_root(), 'data'))) if
