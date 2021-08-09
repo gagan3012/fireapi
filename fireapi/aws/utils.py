@@ -23,3 +23,5 @@ def loosen(file):
     pikd.close()
     return data
 
+
+def chunks(lst, n):
