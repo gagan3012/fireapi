@@ -47,3 +47,5 @@ def get_security_group(client, spotid: str, enable_nfs: bool = False, enable_ds:
             client.authorize_security_group_ingress(GroupName=spotid,
                                                     IpPermissions=[
                                                         {'FromPort': 2049,
+                                                         'IpProtocol': 'tcp',
+                                                         'IpRanges': [{'CidrIp': '0.0.0.0/0'}],
