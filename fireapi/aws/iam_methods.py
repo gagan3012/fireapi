@@ -41,3 +41,5 @@ def get_security_group(client, spotid: str, enable_nfs: bool = False, enable_ds:
         # Create a security group for the current spot instance id
         sg = client.create_security_group(GroupName=spotid,
                                           Description='SG for ' + spotid)
+
+        if enable_nfs:
