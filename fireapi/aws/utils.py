@@ -137,3 +137,8 @@ def get_package_kp_dir():
 def get_default_kp_dir():
     '''Get the default key pair directory'''
     kp_dir = get_package_kp_dir()
+    return kp_dir
+
+
+def set_default_kp_dir(directory: str):
+    '''Set the default key pair directory'''
