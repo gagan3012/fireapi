@@ -45,3 +45,6 @@ def absoluteFilePaths(directory):
 def pull_root():
     '''Retrieve the directory for this instance'''
     return Path(os.path.dirname(os.path.abspath(__file__)))
+
+
+def load_profiles():
