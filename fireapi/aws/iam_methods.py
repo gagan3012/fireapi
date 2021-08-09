@@ -60,3 +60,5 @@ def get_security_group(client, spotid: str, enable_nfs: bool = False, enable_ds:
                                                     IpPermissions=[
                                                         {'FromPort': 80,
                                                          'IpProtocol': 'tcp',
+                                                         'IpRanges': [{'CidrIp': '0.0.0.0/0'}],
+                                                         'ToPort': 80,
