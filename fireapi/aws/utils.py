@@ -99,3 +99,6 @@ def change_default_image(image, deactive_warning=True):
             raise Exception('User exit')
 
     profiles = load_profiles()
+    for k in profiles:
+        profiles[k]['image_id'] = image
+
