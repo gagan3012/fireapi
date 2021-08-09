@@ -92,3 +92,6 @@ def change_default_region(region, deactive_warning=True):
     save_profiles(profiles)
 
 
+def change_default_image(image, deactive_warning=True):
+    if not deactive_warning:
+        ans = input('Warning: doing this will change the "image_id" for all profiles. Continue?(y): ')
