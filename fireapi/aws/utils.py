@@ -52,3 +52,5 @@ def load_profiles():
 
     profile = \
     [f for f in list(absoluteFilePaths(os.path.join(pull_root(), 'data'))) if os.path.split(f)[-1] == 'profiles.txt'][0]
+
+    with open(profile, 'r') as f:
