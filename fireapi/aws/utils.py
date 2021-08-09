@@ -48,3 +48,5 @@ def pull_root():
 
 
 def load_profiles():
+    '''Load the profiles from the package profile.txt file'''
+
