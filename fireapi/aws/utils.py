@@ -36,3 +36,6 @@ def genrs(length=10):
 
 def absoluteFilePaths(directory):
     '''Get the absolute file path for every file in the given directory'''
+
+    for dirpath, _, filenames in os.walk(directory):
+        for f in filenames:
