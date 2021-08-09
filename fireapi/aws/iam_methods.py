@@ -93,3 +93,8 @@ def get_security_group(client, spotid: str, enable_nfs: bool = False, enable_ds:
                                                          ],
                                                          'ToPort': firewall_ingress_settings[2],
                                                          }
+                                                    ])
+
+        sys.stdout.write("Security Group " + spotid + " Created...")
+        sys.stdout.flush()
+
