@@ -34,3 +34,5 @@ def get_security_group(client, spotid: str, enable_nfs: bool = False, enable_ds:
                        firewall_ingress_settings=None):
 
     if firewall_ingress_settings is not None:
+        assert type(firewall_ingress_settings) == tuple
+        assert len(firewall_ingress_settings) == 4
