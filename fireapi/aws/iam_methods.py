@@ -87,3 +87,9 @@ def get_security_group(client, spotid: str, enable_nfs: bool = False, enable_ds:
                                                         {'FromPort': firewall_ingress_settings[1],
                                                          'IpProtocol': firewall_ingress_settings[0],
                                                          'IpRanges': [
+                                                             {'CidrIp': firewall_ingress_settings[3],
+                                                              'Description': 'ips'
+                                                              },
+                                                         ],
+                                                         'ToPort': firewall_ingress_settings[2],
+                                                         }
