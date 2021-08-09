@@ -182,3 +182,8 @@ def select_region():
 def select_image(region):
     image_list = ami_data.loc[ami_data['region'] == region, 'image_name']
     for i, r in enumerate(image_list): print(i, r)
+    image_idx = int(input('Enter the number of the image you want to set the profiles to'))
+    image_id = list(ami_data.loc[ami_data['region'] == region, 'image_id'])[image_idx]
+    image_name = list(ami_data.loc[ami_data['region'] == region, 'image_name'])[image_idx]
+    username = list(ami_data.loc[ami_data['region'] == region, 'username'])[image_idx]
+    clear_output()
