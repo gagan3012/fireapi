@@ -118,3 +118,6 @@ def list_instance_profiles():
     iam_client = boto3.client('iam')
     return iam_client.list_instance_profiles()
 
+
+def printTotals(transferred, toBeTransferred):
+    '''Print paramiko upload transfer'''
