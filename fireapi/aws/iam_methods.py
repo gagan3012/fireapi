@@ -8,3 +8,6 @@ def create_key_pair(client, profile, kp_dir=None):
 
     if kp_dir is None:
         kp_dir = utils.get_default_kp_dir()
+
+    # Download the private key into the CW
+    with open(kp_dir + '/' + profile['key_pair'][1], 'w') as file:
