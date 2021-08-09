@@ -23,3 +23,5 @@ def retrieve_security_group(spotid, client=None, region=None):
 
     elif region is None:
         assert client is not None
+
+    sg = client.describe_security_groups(Filters=[{'Name': 'group-name', 'Values': [spotid]}])['SecurityGroups'][0]
