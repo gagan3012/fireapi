@@ -11,3 +11,6 @@ def create_key_pair(client, profile, kp_dir=None):
 
     # Download the private key into the CW
     with open(kp_dir + '/' + profile['key_pair'][1], 'w') as file:
+        file.write(keypair['KeyMaterial'])
+        file.close()
+    print('Key pair ' + profile['key_pair'][0] + ' created...')
