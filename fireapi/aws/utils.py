@@ -102,3 +102,6 @@ def change_default_image(image, deactive_warning=True):
     for k in profiles:
         profiles[k]['image_id'] = image
 
+    save_profiles(profiles)
+
+
