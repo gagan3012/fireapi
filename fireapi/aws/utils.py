@@ -86,3 +86,6 @@ def change_default_region(region, deactive_warning=True):
             raise Exception('User exit')
 
     profiles = load_profiles()
+    for k in profiles:
+        profiles[k]['region'] = region
+
