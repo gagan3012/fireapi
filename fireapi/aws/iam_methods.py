@@ -17,3 +17,6 @@ def create_key_pair(client, profile, kp_dir=None):
 
 
 def retrieve_security_group(spotid, client=None, region=None):
+    if client is None:
+        assert region is not None
+        client = boto3.client('ec2', region_name=region)
