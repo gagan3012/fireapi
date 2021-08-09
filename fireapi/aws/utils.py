@@ -61,3 +61,7 @@ def load_profiles():
     return profiles
 
 
+def save_profiles(profiles):
+    '''Save the profile dict str in a .txt file'''
+    profile_file = \
+    [f for f in list(absoluteFilePaths(os.path.join(pull_root(), 'data'))) if os.path.split(f)[-1] == 'profiles.txt'][0]
