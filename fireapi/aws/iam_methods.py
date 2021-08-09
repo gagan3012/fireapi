@@ -102,3 +102,6 @@ def get_security_group(client, spotid: str, enable_nfs: bool = False, enable_ds:
 
         if 'InvalidGroup.Duplicate' in str(e):
             print('Security group detected, re-using...')
+            sg = retrieve_security_group(spotid, client=client)
+        else:
+            raise e
