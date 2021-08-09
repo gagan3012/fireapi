@@ -105,3 +105,7 @@ def change_default_image(image, deactive_warning=True):
     save_profiles(profiles)
 
 
+def show_instances():
+    client = boto3.client('ec2', region_name='us-west-2')
+    print('Instances (by Key names):')
+    for i in [res['Instances'][0] for res in client.describe_instances()['Reservations']]:
