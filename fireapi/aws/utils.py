@@ -7,3 +7,6 @@ from IPython.display import clear_output
 from datetime import datetime
 
 root = Path(os.path.dirname(os.path.abspath(__file__)))
+
+
+def full_pickle(title, data):
