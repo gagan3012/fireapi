@@ -153,3 +153,7 @@ def set_default_kp_dir(directory: str):
 def clear_key_pairs():
     '''Erase all the key pairs in the kp_directory'''
     answer = input(
+        'You are about to erase all the locally stored key pairs.\nYou will have to erase the matching key board through the AWS dashboard. Conitnue? (Y)')
+
+    if answer == 'Y':
+        for f in glob.glob(get_default_kp_dir() + '/*'):
