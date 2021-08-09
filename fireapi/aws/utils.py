@@ -31,3 +31,5 @@ def chunks(lst, n):
 
 
 def genrs(length=10):
+    return ''.join(random.choices(string.ascii_letters + string.digits, k=length))
+
