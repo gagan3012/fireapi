@@ -89,3 +89,6 @@ def change_default_region(region, deactive_warning=True):
     for k in profiles:
         profiles[k]['region'] = region
 
+    save_profiles(profiles)
+
+
