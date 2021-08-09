@@ -19,3 +19,5 @@ def full_pickle(title, data):
 def loosen(file):
     '''loads and returns a pickled objects'''
     pikd = open(file, 'rb')
+    data = pickle.load(pikd)
+    pikd.close()
