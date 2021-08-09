@@ -80,3 +80,5 @@ def default_region():
 
 
 def change_default_region(region, deactive_warning=True):
+    if not deactive_warning:
+        ans = input('Warning: doing this will change the "region" for all profiles. Continue?(y): ')
