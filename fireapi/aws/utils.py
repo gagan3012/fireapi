@@ -76,3 +76,7 @@ def save_profiles(profiles):
 
 def default_region():
     profiles = load_profiles()
+    print(profiles['default']['region'])
+
+
+def change_default_region(region, deactive_warning=True):
