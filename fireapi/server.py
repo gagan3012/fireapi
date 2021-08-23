@@ -1,14 +1,3 @@
-from starlette.requests import Request
-from starlette.responses import Response
-from starlette.status import HTTP_401_UNAUTHORIZED
-
-from .models import Payload
-
-app = FastAPI()
-
-origins = ["*"]
-
-app.add_middleware(
     CORSMiddleware,
     allow_origins=origins,
     allow_credentials=True,
