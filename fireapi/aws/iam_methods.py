@@ -1,8 +1,3 @@
-                                                              'Description': 'ips'
-                                                              },
-                                                         ],
-                                                         'ToPort': firewall_ingress_settings[2],
-                                                         }
                                                     ])
 
         sys.stdout.write("Security Group " + spotid + " Created...")
