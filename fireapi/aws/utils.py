@@ -1,12 +1,3 @@
-    image_idx = int(input('Enter the number of the image you want to set the profiles to'))
-    image_id = list(ami_data.loc[ami_data['region'] == region, 'image_id'])[image_idx]
-    image_name = list(ami_data.loc[ami_data['region'] == region, 'image_name'])[image_idx]
-    username = list(ami_data.loc[ami_data['region'] == region, 'username'])[image_idx]
-    clear_output()
-    return image_id, image_name, username
-
-
-def add_profile(profile_dict, instance_type, image_id, image_name, bid_price, min_price, region, username):
     profile_dict[instance_type] = {
         'efs_mount': str(True),
         'firewall_ingress': ('tcp', 22, 22, '0.0.0.0/0'),
