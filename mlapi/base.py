@@ -28,3 +28,4 @@ class ModelServer:
 
     @classmethod
     def get_available_api_types(cls) -> List[str]:
+        return list(itertools.chain.from_iterable(cls.API_TYPES.values()))
