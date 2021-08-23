@@ -27,3 +27,4 @@ class ModelServer:
 
 
     @classmethod
+    def get_available_api_types(cls) -> List[str]:
