@@ -12,3 +12,6 @@ class DataProcessor:
 
     @property
     def preprocess_fn(self):
+        return self._preprocess_fn
+
+    @property
