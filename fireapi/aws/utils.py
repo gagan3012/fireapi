@@ -1,8 +1,3 @@
-    return default_path
-
-
-def get_default_kp_dir():
-    '''Get the default key pair directory'''
     kp_dir = get_package_kp_dir()
     return kp_dir
 
