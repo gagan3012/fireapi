@@ -1,7 +1,3 @@
-93,m1.small,$0.0044 per Hour,$0.0354 per Hour,US East (N. Virginia)
-94,m1.medium,$0.0087 per Hour,$0.0707 per Hour,US East (N. Virginia)
-95,m1.large,$0.0175 per Hour,$0.1415 per Hour,US East (N. Virginia)
-96,m1.xlarge,$0.035 per Hour,$0.283 per Hour,US East (N. Virginia)
 97,c5.large,$0.0324 per Hour,$0.1244 per Hour,US East (N. Virginia)
 98,c5.xlarge,$0.083 per Hour,$0.2488 per Hour,US East (N. Virginia)
 99,c5.2xlarge,$0.1492 per Hour,$0.4975 per Hour,US East (N. Virginia)
