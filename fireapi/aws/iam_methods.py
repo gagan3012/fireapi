@@ -1,9 +1,3 @@
-                                                    ])
-
-        sys.stdout.write("Security Group " + spotid + " Created...")
-        sys.stdout.flush()
-
-    except Exception as e:
 
         if 'InvalidGroup.Duplicate' in str(e):
             print('Security group detected, re-using...')
