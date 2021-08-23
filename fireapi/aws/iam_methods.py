@@ -1,7 +1,3 @@
-                       firewall_ingress_settings=None):
-
-    if firewall_ingress_settings is not None:
-        assert type(firewall_ingress_settings) == tuple
         assert len(firewall_ingress_settings) == 4
 
     try:
