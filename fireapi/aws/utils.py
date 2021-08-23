@@ -1,16 +1,3 @@
-    pikd.close()
-
-
-def loosen(file):
-    '''loads and returns a pickled objects'''
-    pikd = open(file, 'rb')
-    data = pickle.load(pikd)
-    pikd.close()
-    return data
-
-
-def chunks(lst, n):
-    """Yield successive n-sized chunks from lst."""
     for i in range(0, len(lst), n):
         yield lst[i:i + n]
 
