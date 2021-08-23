@@ -1,18 +1,3 @@
-
-    def add_user_id(self, uid):
-        '''Add a user ID to the list of unavailable IDs'''
-        self.ids[uid] = []
-
-    def set_user_id(self, uid):
-        '''Set the current session ID'''
-        self.curid = uid
-        if uid not in self.ids:
-            self.add_user_id(uid)
-
-    def add_call_id(self, fid):
-        '''Log that the current fid has been used with the current session id'''
-        self.ids[self.curid].append(fid)
-
     def get_valid_user_id(self, verbose=False):
         '''Get a user ID that has not been used yet'''
         uid = random.randint(self.lower_limit, self.upper_limit)  # propose a random integer as the new user ID
