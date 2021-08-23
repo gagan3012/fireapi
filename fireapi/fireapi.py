@@ -1,18 +1,4 @@
             requirements_content = f.read()
-    return requirements_content
-
-
-def get_docker_compose_contents(self, docker_compose_path: Text = None):
-    if docker_compose_path is None:
-        base_path = os.path.dirname(os.path.abspath(__file__))
-        docker_compose_path = os.path.join(
-            base_path, 'template-compose.yaml')
-
-    with open(docker_compose_path, 'r') as f:
-        docker_compose_content = f.read()
-        return docker_compose_content
-
-
 def get_nginx_conf_contents(self,
                             domain: Text,
                             subdomain: Text,
