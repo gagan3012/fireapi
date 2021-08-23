@@ -1,13 +1,3 @@
-    for i in range(0, len(lst), n):
-        yield lst[i:i + n]
-
-
-def genrs(length=10):
-    return ''.join(random.choices(string.ascii_letters + string.digits, k=length))
-
-
-def absoluteFilePaths(directory):
-    '''Get the absolute file path for every file in the given directory'''
 
     for dirpath, _, filenames in os.walk(directory):
         for f in filenames:
