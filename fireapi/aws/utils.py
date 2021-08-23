@@ -1,14 +1,3 @@
-def split_workloads(n_jobs, workload, wrkdir=None, filename=None):
-    '''Split the workload into n_jobs which are saved as pickle files in the wrkdir under the filename<i> for each job i
-    This is meant to be used to create the upload material for distributed jobs.
-    __________
-    parameters
-    - n_jobs : int. number of files to split the workload into
-    - workload : list. The items that will be split and pickled
-    - wrkdir : str. The path to store the files for each job. If no directory is submitted the working directory will be printed.
-    - filename : str. The prefix of each job file, the default title is "current_workload"
-    '''
-
     if wrkdir is None:
         wrkdir = os.path.join(pull_root(), 'data')
         if not os.path.exists(wrkdir):
