@@ -12,3 +12,8 @@ class ModelServer:
         preprocess_fn=None,
         postprocess_fn=None,
         preprocess_conf: Optional[dict] = None,
+        postprocess_conf: Optional[dict] = None,
+        **kwargs,
+    ):
+        if not preprocess_conf:
+            preprocess_conf = {}
