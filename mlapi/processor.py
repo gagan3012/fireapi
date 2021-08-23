@@ -15,3 +15,7 @@ class DataProcessor:
         return self._preprocess_fn
 
     @property
+    def postprocess_fn(self):
+        return self._postprocess_fn
+
+    def set_preprocess_fn(self, func):
