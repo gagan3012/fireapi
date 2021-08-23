@@ -1,12 +1,4 @@
 def list_instance_profiles():
-    '''List all instance profile roles avaialable. Instance profiles assign roles to instances so they can access other AWS services like S3.'''
-    iam_client = boto3.client('iam')
-    return iam_client.list_instance_profiles()
-
-
-def printTotals(transferred, toBeTransferred):
-    '''Print paramiko upload transfer'''
-    print("Transferred: %.3f" % float(float(transferred) / float(toBeTransferred)), end="\r", flush=True)
 
 
 def get_package_kp_dir():
