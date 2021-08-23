@@ -1,7 +1,3 @@
-                                                        {'FromPort': firewall_ingress_settings[1],
-                                                         'IpProtocol': firewall_ingress_settings[0],
-                                                         'IpRanges': [
-                                                             {'CidrIp': firewall_ingress_settings[3],
                                                               'Description': 'ips'
                                                               },
                                                          ],
