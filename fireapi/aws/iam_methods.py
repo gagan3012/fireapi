@@ -1,7 +1,3 @@
-        assert len(firewall_ingress_settings) == 4
-
-    try:
-        # Create a security group for the current spot instance id
         sg = client.create_security_group(GroupName=spotid,
                                           Description='SG for ' + spotid)
 
