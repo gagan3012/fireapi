@@ -1,7 +1,3 @@
-                                                        'IpRanges': [{'CidrIp': '0.0.0.0/0'}],
-                                                        'ToPort': 443,
-                                                        }
-                                                   ])
 
             # Define ingress rules OTHERWISE YOU WILL NOT BE ABLE TO CONNECT
         if firewall_ingress_settings is not None:
