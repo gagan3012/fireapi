@@ -1,17 +1,3 @@
-    else:
-        filename = wrkdir + '/' + filename
-
-    workload_size = int(np.ceil(len(workload)) / n_jobs)
-
-    workload_list = [c for c in chunks(workload, workload_size)]
-
-    wnum = 0
-    filenames = []
-    for work in workload_list:
-        full_pickle(filename + '_' + str(wnum), work)
-        filenames.append(filename + '_' + str(wnum) + '.pickle')
-        wnum += 1
-
     return filenames
 
 
