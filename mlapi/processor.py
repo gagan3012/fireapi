@@ -5,3 +5,4 @@ class DataProcessor:
     def __init__(
         self,
         preprocess_fn: Optional[Callable] = None,
+        postprocess_fn: Optional[Callable] = None,
