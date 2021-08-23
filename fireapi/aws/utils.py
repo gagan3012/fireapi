@@ -1,13 +1,4 @@
 
-    for dirpath, _, filenames in os.walk(directory):
-        for f in filenames:
-            yield os.path.abspath(os.path.join(dirpath, f))
-
-
-def pull_root():
-    '''Retrieve the directory for this instance'''
-    return Path(os.path.dirname(os.path.abspath(__file__)))
-
 
 def load_profiles():
     '''Load the profiles from the package profile.txt file'''
