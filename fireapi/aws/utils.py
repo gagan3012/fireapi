@@ -1,15 +1,3 @@
-                fid = random.randint(self.lower_limit, self.upper_limit)  # propose a new one
-            else:
-                self.ids[self.curid].append(fid)  # otherwise add it to the list and use it and move on
-                full_pickle(self.hd + '/current_session_ids', self.ids)  # save the id dictionary for todays session
-                valid = True
-        if verbose:
-            print('Call ID is %i' % fid)
-
-        return fid
-
-    # Load the data needed for the module
-
 
 username_dictionary = {'Linux': 'ec2-user',
                        'Ubuntu': 'ubuntu',
