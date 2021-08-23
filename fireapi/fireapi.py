@@ -1,14 +1,3 @@
-        # TODO: Maybe use env variables for this
-        docker_template_content = docker_template_content.replace(
-            "$BASE_IMAGE", BUDGETML_BASE_IMAGE_NAME)
-    return docker_template_content
-
-
-def get_requirements_file_contents(self, requirements_path: Text):
-    if requirements_path is None:
-        requirements_content = ''
-    else:
-        with open(requirements_path, 'r') as f:
             requirements_content = f.read()
     return requirements_content
 
