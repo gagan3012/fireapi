@@ -1,15 +1,3 @@
-            "$BUDGET_DOMAIN", f'{subdomain}.{domain}')
-        return nginx_config_content
-
-def launch_local(self,
-                 predictor_class,
-                 requirements: Union[Text, List] = None,
-                 dockerfile_path: Text = None,
-                 bucket_name: Text = None,
-                 username: Text = 'budget',
-                 password: Text = str(uuid4())):
-    """
-    Launch API locally at 0.0.0.0:8000 via docker to simulate endpoint
     before a proper launch.
     :param predictor_class: class of type budgetml.BasePredictor
     :param username: username for FastAPI endpoints
