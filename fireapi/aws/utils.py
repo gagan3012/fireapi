@@ -1,16 +1,3 @@
-    profile_dict = {}
-    for tup in spot_instance_pricing.itertuples():
-
-        if 'N/A' in tup.linux_price:
-            continue
-        instance_price = float(re.findall('([0-9]*\.[0-9]*)', tup.linux_price)[0])
-        bid_price = instance_price * price_increase
-
-        profile_dict = add_profile(profile_dict,
-                                   tup.instance_type,
-                                   image_id,
-                                   image_name,
-                                   bid_price,
                                    instance_price,
                                    region_code,
                                    username)
