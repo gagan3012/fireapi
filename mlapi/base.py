@@ -21,3 +21,5 @@ class ModelServer:
             postprocess_conf = {}
 
         self.api_type = api_type.upper()
+        self.model = model
+        self.preprocess_conf = preprocess_conf
