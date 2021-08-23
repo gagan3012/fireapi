@@ -1,9 +1,3 @@
-    elif region is None:
-        assert client is not None
-
-    sg = client.describe_security_groups(Filters=[{'Name': 'group-name', 'Values': [spotid]}])['SecurityGroups'][0]
-    return sg
-
 
 # TODO : Split security group functions into create and retrieve
 
