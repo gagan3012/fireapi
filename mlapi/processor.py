@@ -19,3 +19,5 @@ class DataProcessor:
         return self._postprocess_fn
 
     def set_preprocess_fn(self, func):
+        self._preprocess_fn = func
+
