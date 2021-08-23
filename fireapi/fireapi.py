@@ -1,14 +1,3 @@
-from typing import Text, Union, List
-from uuid import uuid4
-
-
-def get_docker_file_contents(self, dockerfile_path: Text):
-    if dockerfile_path is None:
-        base_path = os.path.dirname(os.path.abspath(__file__))
-        dockerfile_path = os.path.join(base_path, 'template.Dockerfile')
-
-    with open(dockerfile_path, 'r') as f:
-        docker_template_content = f.read()
         # TODO: Maybe use env variables for this
         docker_template_content = docker_template_content.replace(
             "$BASE_IMAGE", BUDGETML_BASE_IMAGE_NAME)
