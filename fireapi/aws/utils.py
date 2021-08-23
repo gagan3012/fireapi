@@ -1,16 +1,3 @@
-
-
-def reset_profiles(price_increase=1.15):
-    '''Reset the profile image, region, and set what % of the price you want to set as maximum bid for all instance types (remember you can always submit a custom price when making spot-requests).'''
-    assert price_increase >= 1
-
-    region = select_region()
-    image_id, image_name, username = select_image(region)
-
-    region_name = region.split(')')[0] + ')'
-    region_code = region.split(')')[1]
-    spot_instance_pricing.loc[spot_instance_pricing['region'] == region_name]
-
     profile_dict = {}
     for tup in spot_instance_pricing.itertuples():
 
