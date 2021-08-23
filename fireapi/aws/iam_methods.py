@@ -1,7 +1,3 @@
-                                                         'IpProtocol': 'tcp',
-                                                         'IpRanges': [{'CidrIp': '0.0.0.0/0'}],
-                                                         'ToPort': 80,
-                                                         },
                                                         {'FromPort': 443,
                                                          'IpProtocol': 'tcp',
                                                          'IpRanges': [{'CidrIp': '0.0.0.0/0'}],
