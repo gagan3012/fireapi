@@ -1,14 +1,3 @@
-        else:
-            self.hd = logdir
-
-        if os.path.exists(self.hd + '/current_session_ids.pickle'):
-            self.ids = loosen(self.hd + '/current_session_ids.pickle')  # load any existing log
-            if self.ids['date'] != date:  # if it is from a different date we reset it
-                self.ids = {}
-                self.ids['date'] = date  # and set its date to today
-        else:
-            self.ids = {}
-            self.ids['date'] = date
 
     def add_user_id(self, uid):
         '''Add a user ID to the list of unavailable IDs'''
