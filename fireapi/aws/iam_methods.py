@@ -1,7 +1,3 @@
-    # Create a key pair on AWS
-    keypair = client.create_key_pair(KeyName=profile['key_pair'][0])
-
-    if kp_dir is None:
         kp_dir = utils.get_default_kp_dir()
 
     # Download the private key into the CW
