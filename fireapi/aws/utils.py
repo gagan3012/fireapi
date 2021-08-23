@@ -1,16 +1,3 @@
-    profile_dict[instance_type] = {
-        'efs_mount': str(True),
-        'firewall_ingress': ('tcp', 22, 22, '0.0.0.0/0'),
-        'image_id': image_id,
-        'image_name': image_name,
-        'instance_type': str(instance_type),
-        'price': str(bid_price),
-        'min_price': str(min_price),
-        'region': str(region),
-        'scripts': [],
-        'username': str(username)
-    }
-    return profile_dict
 
 
 def reset_profiles(price_increase=1.15):
