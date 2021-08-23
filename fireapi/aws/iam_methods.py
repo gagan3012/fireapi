@@ -1,7 +1,3 @@
-                                                         }
-                                                    ])
-
-            # Add HTTPS egress rules (port 443) in order to connect datasync agent instance to AWS
             client.authorize_security_group_egress(GroupId=sg['GroupId'],
                                                    IpPermissions=[
                                                        {'FromPort': 443,
