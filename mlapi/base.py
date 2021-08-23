@@ -17,3 +17,7 @@ class ModelServer:
     ):
         if not preprocess_conf:
             preprocess_conf = {}
+        if not postprocess_conf:
+            postprocess_conf = {}
+
+        self.api_type = api_type.upper()
