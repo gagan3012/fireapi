@@ -27,3 +27,6 @@ class DataProcessor:
     def preprocess(self, x, **kwargs):
         if self._preprocess_fn is None:
             raise UserWarning("preprocess method is not defined")
+        return self._preprocess_fn(x, **kwargs)
+
+    def postprocess(self, x, **kwargs):
