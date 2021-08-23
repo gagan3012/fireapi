@@ -1,16 +1,3 @@
-            requirements_content = f.read()
-def get_nginx_conf_contents(self,
-                            domain: Text,
-                            subdomain: Text,
-                            nginx_config_path: Text = None):
-    if nginx_config_path is None:
-        base_path = os.path.dirname(os.path.abspath(__file__))
-        nginx_config_path = os.path.join(
-            base_path, 'template-nginx.conf')
-
-    with open(nginx_config_path, 'r') as f:
-        nginx_config_content = f.read()
-        nginx_config_content = nginx_config_content.replace(
             "$BUDGET_DOMAIN", f'{subdomain}.{domain}')
         return nginx_config_content
 
