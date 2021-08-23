@@ -1,13 +1,3 @@
-
-    if answer == 'Y':
-        for f in glob.glob(get_default_kp_dir() + '/*'):
-            os.remove(f)
-    else:
-        raise Exception('User exit')
-
-
-def find_username(s):
-    for k in username_dictionary:
         ios = re.findall('(' + k + ')', s)
         if len(ios) > 0:
             ios = username_dictionary[ios[0]]
