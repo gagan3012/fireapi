@@ -1,11 +1,3 @@
-def show_instances():
-    client = boto3.client('ec2', region_name='us-west-2')
-    print('Instances (by Key names):')
-    for i in [res['Instances'][0] for res in client.describe_instances()['Reservations']]:
-        print('     - "' + i['KeyName'].split('-')[1] + '" Type: ' + i['InstanceType'] + ', ID: ' + i['InstanceId'],
-              flush=True)
-
-
 def list_instance_profiles():
     '''List all instance profile roles avaialable. Instance profiles assign roles to instances so they can access other AWS services like S3.'''
     iam_client = boto3.client('iam')
