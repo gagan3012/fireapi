@@ -6,3 +6,6 @@ class DataProcessor:
         self,
         preprocess_fn: Optional[Callable] = None,
         postprocess_fn: Optional[Callable] = None,
+    ):
+        self._preprocess_fn = preprocess_fn
+        self._postprocess_fn = postprocess_fn
