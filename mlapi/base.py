@@ -26,3 +26,4 @@ class ModelServer:
         self.postprocess_conf = postprocess_conf
 
 
+    @classmethod
