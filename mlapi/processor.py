@@ -9,3 +9,6 @@ class DataProcessor:
     ):
         self._preprocess_fn = preprocess_fn
         self._postprocess_fn = postprocess_fn
+
+    @property
+    def preprocess_fn(self):
