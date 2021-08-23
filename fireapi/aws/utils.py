@@ -1,15 +1,3 @@
-    return filenames
-
-
-class CurrentIdLog:
-
-    def __init__(self, logdir=None, lower_limit=0, upper_limit=9999999):
-        '''
-        A log class to keep track of the user and call Ids that have been used today.
-        This class was designed to avoid using repeat user id numbers and call numbers which will return an error in the API.
-        We reset by day because call numbers are reset in the API system after a short ammount of time.
-        __________
-        parameters
         - logdir : str. the directory to load or store the "current_session_ids.pickle" file which contains the IDs that have been used today so far.
         '''
         self.curid = None
