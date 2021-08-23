@@ -1,7 +1,3 @@
-6,t2.micro,$0.0035 per Hour,$0.0081 per Hour,US East (N. Virginia)
-7,t2.small,$0.0069 per Hour,$0.0159 per Hour,US East (N. Virginia)
-8,t2.medium,$0.0139 per Hour,$0.0319 per Hour,US East (N. Virginia)
-9,t2.large,$0.0278 per Hour,$0.0558 per Hour,US East (N. Virginia)
 10,t2.xlarge,$0.0557 per Hour,$0.0967 per Hour,US East (N. Virginia)
 11,t2.2xlarge,$0.1114 per Hour,$0.1734 per Hour,US East (N. Virginia)
 12,t3.nano,$0.0016 per Hour,$0.0062 per Hour,US East (N. Virginia)
