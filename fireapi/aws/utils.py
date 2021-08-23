@@ -1,12 +1,3 @@
-            raise Exception('User exit')
-
-    profiles = load_profiles()
-    for k in profiles:
-        profiles[k]['image_id'] = image
-
-    save_profiles(profiles)
-
-
 def show_instances():
     client = boto3.client('ec2', region_name='us-west-2')
     print('Instances (by Key names):')
