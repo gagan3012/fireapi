@@ -1,16 +1,3 @@
-        - logdir : str. the directory to load or store the "current_session_ids.pickle" file which contains the IDs that have been used today so far.
-        '''
-        self.curid = None
-        self.ids = None
-        self.hd = None
-
-        self.lower_limit = lower_limit
-        self.upper_limit = upper_limit
-
-        date = datetime.today().date()
-
-        if logdir is None:
-            self.hd = os.path.join(pull_root(), 'data')
         else:
             self.hd = logdir
 
