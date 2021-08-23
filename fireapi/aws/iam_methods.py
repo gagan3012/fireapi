@@ -1,8 +1,3 @@
-def retrieve_security_group(spotid, client=None, region=None):
-    if client is None:
-        assert region is not None
-        client = boto3.client('ec2', region_name=region)
-
     elif region is None:
         assert client is not None
 
