@@ -1,7 +1,3 @@
-            # Add HTTP and HTTPS rules (port 80 & 443) in order to connect to datasync agent
-            client.authorize_security_group_ingress(GroupName=spotid,
-                                                    IpPermissions=[
-                                                        {'FromPort': 80,
                                                          'IpProtocol': 'tcp',
                                                          'IpRanges': [{'CidrIp': '0.0.0.0/0'}],
                                                          'ToPort': 80,
