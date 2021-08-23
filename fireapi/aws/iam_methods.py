@@ -1,7 +1,3 @@
-            client.authorize_security_group_egress(GroupId=sg['GroupId'],
-                                                   IpPermissions=[
-                                                       {'FromPort': 443,
-                                                        'IpProtocol': 'tcp',
                                                         'IpRanges': [{'CidrIp': '0.0.0.0/0'}],
                                                         'ToPort': 443,
                                                         }
