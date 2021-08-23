@@ -1,17 +1,3 @@
-    if wrkdir is None:
-        wrkdir = os.path.join(pull_root(), 'data')
-        if not os.path.exists(wrkdir):
-            try:
-                os.mkdir(wrkdir)
-            except Exception as e:
-                print(
-                    'Failed to make directory, submiting an existing directory will fix this. Otherwise you can change permissions.')
-                raise e
-
-    assert os.path.exists(wrkdir)
-
-    if filename is None:
-        filename = wrkdir + '/current_workload'
     else:
         filename = wrkdir + '/' + filename
 
