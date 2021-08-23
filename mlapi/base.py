@@ -25,3 +25,4 @@ class ModelServer:
         self.preprocess_conf = preprocess_conf
         self.postprocess_conf = postprocess_conf
 
+
