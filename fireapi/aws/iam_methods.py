@@ -1,8 +1,3 @@
-                                                         }
-                                                    ])
-
-        if enable_ds:
-            # Add ingress & egress rules to enable datasync
             # Add HTTP and HTTPS rules (port 80 & 443) in order to connect to datasync agent
             client.authorize_security_group_ingress(GroupName=spotid,
                                                     IpPermissions=[
