@@ -1,15 +1,3 @@
-    def get_valid_user_id(self, verbose=False):
-        '''Get a user ID that has not been used yet'''
-        uid = random.randint(self.lower_limit, self.upper_limit)  # propose a random integer as the new user ID
-        valid = False
-        while not valid:
-            if uid in self.ids:  # if it is in the current list of used IDs
-                uid = random.randint(self.lower_limit, self.upper_limit)  # propose another
-            else:
-                self.set_user_id(uid)  # otherwise set it as the current ID and move on
-                full_pickle(self.hd + '/current_session_ids', self.ids)  # save the id dictionary for todays session
-                valid = True
-        if verbose:
             print('Current ID is %i' % uid)
 
         return uid  # return the user ID for use
