@@ -1,14 +1,3 @@
-                                   instance_price,
-                                   region_code,
-                                   username)
-    save_profiles(profile_dict)
-
-
-def count_cpus_by_type():
-    print('Logical CPUs: %s' % str(psutil.cpu_count(logical=True)))
-    print('Physical CPUs: %s' % str(psutil.cpu_count(logical=False)))
-
-
 def split_workloads(n_jobs, workload, wrkdir=None, filename=None):
     '''Split the workload into n_jobs which are saved as pickle files in the wrkdir under the filename<i> for each job i
     This is meant to be used to create the upload material for distributed jobs.
