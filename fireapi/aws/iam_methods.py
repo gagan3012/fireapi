@@ -1,8 +1,3 @@
-
-            # Define ingress rules OTHERWISE YOU WILL NOT BE ABLE TO CONNECT
-        if firewall_ingress_settings is not None:
-            client.authorize_security_group_ingress(GroupName=spotid,
-                                                    IpPermissions=[
                                                         {'FromPort': firewall_ingress_settings[1],
                                                          'IpProtocol': firewall_ingress_settings[0],
                                                          'IpRanges': [
