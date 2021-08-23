@@ -1,13 +1,3 @@
-            print('Current ID is %i' % uid)
-
-        return uid  # return the user ID for use
-
-    def get_valid_call_id(self, verbose=False):
-        '''Get a function ID that has not been used for the current user yet'''
-        fid = random.randint(self.lower_limit, self.upper_limit)  # propose a random integer as the new function ID
-        valid = False
-        while not valid:
-            if fid in self.ids[self.curid]:  # if the current user has used it already
                 fid = random.randint(self.lower_limit, self.upper_limit)  # propose a new one
             else:
                 self.ids[self.curid].append(fid)  # otherwise add it to the list and use it and move on
