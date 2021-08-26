@@ -23,3 +23,5 @@ class API(ModelServer):
             preprocess_fn: Override Data Preprocessing Function, data will
             be processed with this function
             before calling model.
+            postprocess_fn: Override Data Postprocessing Function, model
+            output will be passed into this function.
