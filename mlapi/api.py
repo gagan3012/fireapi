@@ -38,3 +38,4 @@ class API(ModelServer):
             f"<a href={documentation_url}>Goto Chitra Docs</a> 🔗",
         )
 
+        self.app: FastAPI = FastAPI(title=title, description=desc, docs_url=docs_url)
