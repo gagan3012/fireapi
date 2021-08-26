@@ -37,3 +37,4 @@ class API(ModelServer):
             "description",
             f"<a href={documentation_url}>Goto Chitra Docs</a> 🔗",
         )
+
