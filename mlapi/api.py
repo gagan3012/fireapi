@@ -13,3 +13,4 @@ class API(ModelServer):
         preprocess_fn: Optional[Callable] = None,
         preprocess_conf: Optional[Dict] = None,
         postprocess_fn: Optional[Callable] = None,
+        postprocess_conf: Optional[Dict] = None,
