@@ -43,4 +43,5 @@ class API(ModelServer):
             preprocess_conf = {}
         if not postprocess_conf:
             postprocess_conf = {}
+        self.preprocess_conf = preprocess_conf
         self.postprocess_conf = postprocess_conf
