@@ -10,3 +10,6 @@ class API(ModelServer):
         self,
         api_type: str,
         model: Callable,
+        preprocess_fn: Optional[Callable] = None,
+        preprocess_conf: Optional[Dict] = None,
+        postprocess_fn: Optional[Callable] = None,
