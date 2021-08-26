@@ -19,3 +19,5 @@ class API(ModelServer):
         """
         Creates FastAPI app for `api_type`
         Args:
+            model: Any ML/DL model
+            preprocess_fn: Override Data Preprocessing Function, data will
