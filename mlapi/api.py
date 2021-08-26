@@ -14,3 +14,4 @@ class API(ModelServer):
         preprocess_conf: Optional[Dict] = None,
         postprocess_fn: Optional[Callable] = None,
         postprocess_conf: Optional[Dict] = None,
+        **kwargs,
