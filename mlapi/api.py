@@ -17,3 +17,5 @@ class API(ModelServer):
         **kwargs,
     ):
         """
+        Creates FastAPI app for `api_type`
+        Args:
