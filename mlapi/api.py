@@ -29,3 +29,6 @@ class API(ModelServer):
         """
         super(API, self).__init__(
             api_type, model, preprocess_fn, postprocess_fn, **kwargs
+        )
+
+        docs_url = kwargs.get("docs_url", "/docs")
