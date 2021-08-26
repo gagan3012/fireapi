@@ -25,3 +25,5 @@ class API(ModelServer):
             before calling model.
             postprocess_fn: Override Data Postprocessing Function, model
             output will be passed into this function.
+            **kwargs:
+        """
