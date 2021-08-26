@@ -40,3 +40,4 @@ class API(ModelServer):
 
         self.app: FastAPI = FastAPI(title=title, description=desc, docs_url=docs_url)
         if not preprocess_conf:
+            preprocess_conf = {}
