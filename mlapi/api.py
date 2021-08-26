@@ -45,3 +45,4 @@ class API(ModelServer):
             postprocess_conf = {}
         self.preprocess_conf = preprocess_conf
         self.postprocess_conf = postprocess_conf
+        self.setup(**kwargs)
