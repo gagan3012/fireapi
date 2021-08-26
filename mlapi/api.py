@@ -32,3 +32,5 @@ class API(ModelServer):
         )
 
         docs_url = kwargs.get("docs_url", "/docs")
+        title = kwargs.get("title", "Chitra Model Server 🔥")
+        desc = kwargs.get(
