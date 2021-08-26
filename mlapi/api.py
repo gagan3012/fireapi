@@ -15,3 +15,4 @@ class API(ModelServer):
         postprocess_fn: Optional[Callable] = None,
         postprocess_conf: Optional[Dict] = None,
         **kwargs,
+    ):
