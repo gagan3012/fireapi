@@ -21,3 +21,5 @@ class API(ModelServer):
         Args:
             model: Any ML/DL model
             preprocess_fn: Override Data Preprocessing Function, data will
+            be processed with this function
+            before calling model.
