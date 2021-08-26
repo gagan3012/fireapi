@@ -27,3 +27,5 @@ class API(ModelServer):
             output will be passed into this function.
             **kwargs:
         """
+        super(API, self).__init__(
+            api_type, model, preprocess_fn, postprocess_fn, **kwargs
