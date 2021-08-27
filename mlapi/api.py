@@ -49,3 +49,4 @@ class API(ModelServer):
 
     async def predict_image(self, file: UploadFile = File(...)):
         preprocess_fn = self.data_processor.preprocess_fn
+        postprocess_fn = self.data_processor.postprocess_fn
