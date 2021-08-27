@@ -47,4 +47,4 @@ class API(ModelServer):
         self.postprocess_conf = postprocess_conf
         self.setup(**kwargs)
 
-    
+            return x
