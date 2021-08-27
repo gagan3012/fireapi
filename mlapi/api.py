@@ -54,3 +54,4 @@ class API(ModelServer):
         x = preprocess_fn(await file.read())
         x = self.model(x)
         x = postprocess_fn(x)
+        return x
