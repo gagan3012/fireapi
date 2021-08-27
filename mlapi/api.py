@@ -48,3 +48,4 @@ class API(ModelServer):
         self.setup(**kwargs)
 
     async def predict_image(self, file: UploadFile = File(...)):
+        preprocess_fn = self.data_processor.preprocess_fn
