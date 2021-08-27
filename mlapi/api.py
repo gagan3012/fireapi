@@ -1,5 +1,6 @@
 from typing import Callable, Optional, Dict
 
+from fastapi import FastAPI, UploadFile, File
 
 from mlapi.base import ModelServer
 
