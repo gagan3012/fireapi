@@ -47,7 +47,7 @@ class API(ModelServer):
         self.postprocess_conf = postprocess_conf
         self.setup(**kwargs)
 
-        
+
     async def predict(self, file: UploadFile = File(...)):
         preprocess_fn = self.data_processor.preprocess_fn
         postprocess_fn = self.data_processor.postprocess_fn
