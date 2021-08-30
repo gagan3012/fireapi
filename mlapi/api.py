@@ -35,7 +35,6 @@ class API(ModelServer):
         title = kwargs.get("title", "Chitra Model Server 🔥")
         desc = kwargs.get(
             "description",
-            f"<a href={documentation_url}>Goto Chitra Docs</a> 🔗",
         )
 
         self.app: FastAPI = FastAPI(title=title, description=desc, docs_url=docs_url)
