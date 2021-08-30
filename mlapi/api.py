@@ -47,6 +47,7 @@ class API(ModelServer):
         self.postprocess_conf = postprocess_conf
         self.setup(**kwargs)
 
+        
         preprocess_fn = self.data_processor.preprocess_fn
         postprocess_fn = self.data_processor.postprocess_fn
 
