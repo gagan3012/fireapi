@@ -1,7 +1,3 @@
-# TO DO: Import missing modules/packages (if any)
-
-
-def writeDockerfile(dockerPath):
     with open(dockerPath,'w') as f:
 
         # TO DO: Complete this script to create a Dockerfile for the prediction script completed in step 1 (predict.py).
