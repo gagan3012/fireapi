@@ -1,6 +1,3 @@
-
-# Please complete the script below (refer to sections marked "TO DO" for parts to be completed)
-
 # TO DO: Import missing modules/packages (if any)
 
 
