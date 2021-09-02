@@ -8,3 +8,5 @@
 
 
 def writeDockerfile(dockerPath):
+    with open(dockerPath,'w') as f:
+
