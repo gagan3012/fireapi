@@ -19,3 +19,5 @@ import tensorflow as tf
 # Load the model predict and check for errors
 
 def predict():
+	modelfile = [x for x in os.listdir('.') if 'model' in x][0]
+
