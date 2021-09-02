@@ -1,6 +1,3 @@
-# The model can be in Tensorflow or scikit-learn (choose one)
-# The model format can be any serialized file format that is appropriate for ML framework that you choose (choose one)
-
 # Please complete the prediction script below (refer to sections marked "TO DO" for parts to be completed)
 
 import sys
