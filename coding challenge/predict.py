@@ -1,7 +1,3 @@
-# Please complete the prediction script below (refer to sections marked "TO DO" for parts to be completed)
-
-import sys
-from flask import Flask
 import google.cloud.storage as gcs
 from flask import request
 import os
