@@ -15,3 +15,4 @@ def writeDockerfile(dockerPath):
                      "COPY REQUIREMNTS.TXT " \
                      "RUN PIP INSTALL -R REQUIREMENT.TXT" \
                     "COPY PREDICT.PY ./PREDICT.PY"
+                    "RUN PYTHON PREDICT.PY"
