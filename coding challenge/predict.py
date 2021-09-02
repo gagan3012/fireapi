@@ -25,3 +25,5 @@ def predict():
 	# TO DO:
 	#	-load model file
 	#	-get prediction
+
+	model = tf.keras.models.load_model(modelfile)
