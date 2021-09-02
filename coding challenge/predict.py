@@ -1,6 +1,3 @@
-	#	-check for errors
-
-	model = tf.keras.models.load_model(modelfile)
 
 	try:
 		prediction = model.predict(data)
