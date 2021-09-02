@@ -1,6 +1,3 @@
-# Load the model predict and check for errors
-
-def predict():
 	data = request.json
 	modelfile = [x for x in os.listdir('.') if 'model' in x][0]
 
