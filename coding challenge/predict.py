@@ -15,3 +15,7 @@ from flask import jsonify
 import tensorflow as tf
 
 # TO DO: Import missing modules/packages (if any)
+# Prediction type is not known
+# Load the model predict and check for errors
+
+def predict():
