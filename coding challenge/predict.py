@@ -22,3 +22,6 @@ def predict():
 	data = request.json
 	modelfile = [x for x in os.listdir('.') if 'model' in x][0]
 
+	# TO DO:
+	#	-load model file
+	#	-get prediction
