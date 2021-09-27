@@ -32,7 +32,6 @@ class API(ModelServer):
         )
 
         docs_url = kwargs.get("docs_url", "/docs")
-        title = kwargs.get("title", "Chitra Model Server 🔥")
 
         self.app: FastAPI = FastAPI(title=title, description=desc, docs_url=docs_url)
         if not preprocess_conf:
