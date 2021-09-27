@@ -9,7 +9,6 @@ class ModelServer:
         self,
         api_type: str,
         model: Callable,
-        postprocess_fn=None,
         preprocess_conf: Optional[dict] = None,
         postprocess_conf: Optional[dict] = None,
         **kwargs,
