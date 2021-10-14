@@ -20,3 +20,5 @@ def index():
 #
 # @app.route('/users', methods=['POST'])
 # def create_user():
+#     # This is the JSON body the user sent in their POST request.
+#     user_as_json = app.current_request.json_body
