@@ -26,3 +26,4 @@ def index():
 #     return {'user': user_as_json}
 #
 # See the README documentation for more examples.
+#
