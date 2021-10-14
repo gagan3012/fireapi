@@ -13,3 +13,6 @@ def index():
 #
 # Here are a few more examples:
 #
+# @app.route('/hello/{name}')
+# def hello_name(name):
+#    # '/hello/james' -> {"hello": "james"}
