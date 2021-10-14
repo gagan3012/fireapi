@@ -4,3 +4,4 @@
   "stages": {
     "dev": {
       "api_gateway_stage": "api"
+    }
