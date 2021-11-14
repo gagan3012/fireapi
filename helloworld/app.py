@@ -3,7 +3,7 @@ from chalice import Chalice
 app = Chalice(app_name='helloworld')
 
 
-@app.route('/')
+@app.route('/hello', methods=[''])
 def index():
     return {'hello': 'world'}
 
